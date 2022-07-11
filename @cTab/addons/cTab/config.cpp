@@ -78,18 +78,18 @@ class CfgMods {
 
 class CfgWeapons
 {
-	class ItemCore;
- 	class InventoryItem_Base_F;
-	class ItemcTab: ItemCore {
+	class CBA_MiscItem;
+	class CBA_MiscItem_ItemInfo;
+	class ItemcTab: CBA_MiscItem {
 		descriptionshort = $STR_ctab_core_TabletShort;
 		descriptionuse = "<t color='#9cf953'>Use: </t>Show Commander's Tablet";
 		displayname = $STR_ctab_core_Tablet;
 		picture = "\cTab\img\icon_dk10.paa";
 		model = "\ctab\data\itemDK10.p3d";
 		scope = 2;
-		simulation = "ItemGPS";
-		class ItemInfo {
-			mass = 56;
+		simulation="Weapon";
+		class ItemInfo: CBA_MiscItem_ItemInfo {
+			mass=12;
 		};
 		author = AUTHOR;
 	};
@@ -100,8 +100,8 @@ class CfgWeapons
 		displayname = $STR_ctab_core_Android;
 		picture = "\cTab\img\icon_Android.paa";
 		model = "\ctab\data\itemAndroid.p3d";
-		class ItemInfo {
-			mass = 5;
+		class ItemInfo: CBA_MiscItem_ItemInfo {
+			mass=4;
 		};
 		author = AUTHOR;
 	};
@@ -112,8 +112,8 @@ class CfgWeapons
 		displayname = $STR_ctab_core_MicroDAGR;
 		picture = "\cTab\img\icon_MicroDAGR.paa";
 		model = "\ctab\data\itemMicroDAGR.p3d";
-		class ItemInfo {
-			mass = 6;
+		class ItemInfo: CBA_MiscItem_ItemInfo {
+			mass=2;
 		};
 		author = AUTHOR;
 	};
@@ -128,7 +128,7 @@ class CfgWeapons
 		scope = 2;
 		type = 0;
 		class ItemInfo: CBA_MiscItem_ItemInfo {
-			mass = 4;
+			mass=2;
 		};
 		author = AUTHOR;
 	};	

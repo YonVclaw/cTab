@@ -12,11 +12,12 @@ ADDON = true;
 [QGVAR(gridPrecision), "LIST", [LLSTRING(gridPrecision), LLSTRING(gridPrecisionDetails)], ["cTab", LLSTRING(mapCategory)], [[0, 1, 2], [LLSTRING(gridPrecision0), LLSTRING(gridPrecision1), LLSTRING(gridPrecision2)], 0]] call CBA_fnc_addSetting;
 
 if (isClass (configFile >> "CfgWeapons" >> "ACE_microDAGR")) then {
-	[QGVAR(useAceMicroDagr), "CHECKBOX", [LLSTRING(useAceMicroDagr), LLSTRING(useAceMicroDagrDetails)], ["cTab", LLSTRING(mapCategory)], true, 0, {}, true] call CBA_fnc_addSetting;
+    [QGVAR(useAceMicroDagr), "CHECKBOX", [LLSTRING(useAceMicroDagr), LLSTRING(useAceMicroDagrDetails)], ["cTab", LLSTRING(mapCategory)], true, 0, {}, true] call CBA_fnc_addSetting;
 } else {
-	GVAR(useAceMicroDagr) = false;
+    GVAR(useAceMicroDagr) = false;
 };
 
 
 [QGVAR(helmetcam_mode), "LIST", [LLSTRING(helmetcam_mode), LLSTRING(helmetcam_modeDetails)], ["cTab", LLSTRING(videoCategory)], [[0, 1], [LLSTRING(disabled), LLSTRING(enabled)], 1], 0, {}, false] call CBA_fnc_addSetting;
 [QGVAR(uav_mode),       "LIST", [LLSTRING(uav_mode), LLSTRING(uav_modeDetails)], ["cTab", LLSTRING(videoCategory)], [[0, 1], [LLSTRING(disabled), LLSTRING(enabled)], 1], 0, {}, false] call CBA_fnc_addSetting;
+
