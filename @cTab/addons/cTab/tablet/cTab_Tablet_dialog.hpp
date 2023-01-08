@@ -31,7 +31,8 @@ class cTab_Tablet_dlg {
         class windowsBG: cTab_RscPicture
         {
             idc = IDC_CTAB_WIN_BACK;
-            text = "#(argb,8,8,3)color(0.2,0.431,0.647,1)";
+            text = "\cTab\img\windowgob.jpg";
+            // text = "#(argb,8,8,3)color(0.2,0.431,0.647,1)";
             x = pxToScreen_X(cTab_GUI_tablet_MAP_X);
             y = pxToScreen_Y(cTab_GUI_tablet_MAP_Y);
             w = pxToScreen_W(cTab_GUI_tablet_MAP_W);
