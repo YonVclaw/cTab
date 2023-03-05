@@ -31,7 +31,7 @@ class cTab_Tablet_dlg {
 		class windowsBG: cTab_RscPicture
 		{
 			idc = IDC_CTAB_WIN_BACK;
-			text= "\cTab\img\desktop_co.paa";
+			text= "\cTab\img\windowgob.jpg";
 			//text= "\cTab\img\desktop_1ergtd_co.paa";
 			x = pxToScreen_X(cTab_GUI_tablet_MAP_X);
 			y = pxToScreen_Y(cTab_GUI_tablet_MAP_Y);
@@ -100,7 +100,7 @@ class cTab_Tablet_dlg {
 				{
 					style = ST_PICTURE;
 					idc = IDC_CTAB_ACTBFTTXT;
-					text = "\cTab\img\icon_bft_ca.paa";
+					text = "\cTab\img\gobp2_256.paa";
 					//text = "\cTab\img\icon_map_ca.paa";
 					x = pxToGroup_X(cTab_GUI_tablet_SCREEN_CONTENT_X + cTab_GUI_tablet_DESKTOP_ICON_OFFSET_X);
 					y = pxToGroup_Y(cTab_GUI_tablet_SCREEN_CONTENT_Y + cTab_GUI_tablet_DESKTOP_ICON_OFFSET_Y);

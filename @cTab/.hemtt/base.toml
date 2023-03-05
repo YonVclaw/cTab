@@ -1,5 +1,5 @@
-name = "cTab"
-prefix = "ctab"
+name = "ghostb_cTab"
+prefix = "ctab_ghostb"
 author = "cTab Authors, see https://github.com/jetelain/cTab"
 template = "cba"
 mainprefix = "z"
